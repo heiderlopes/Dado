@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dado</string>
+    <string name="vitoria">Win</string>
+    <string name="derrota">Draw</string>
+    <string name="empate">Lose</string>
+    <string name="jogar">Play</string>
+</resources>

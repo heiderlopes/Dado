@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="br.com.fiap.dado.GameActivity">
+
+    <LinearLayout
+        android:id="@+id/cabecalho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/texto_cabecalho_titulo"
+                android:text="@string/vitoria" />
+
+            <TextView
+                android:id="@+id/tvVitorias"
+                style="@style/texto_cabecalho" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/texto_cabecalho_titulo"
+                android:text="@string/empate" />
+
+            <TextView
+                android:id="@+id/tvEmpates"
+                style="@style/texto_cabecalho"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/texto_cabecalho_titulo"
+                android:text="@string/derrota" />
+
+            <TextView
+                android:id="@+id/tvDerrotas"
+                style="@style/texto_cabecalho"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/cabecalho"
+        android:layout_above="@+id/btJogar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivDadoJogador"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/dice_1" />
+
+        <ImageView
+            android:id="@+id/ivDadoPC"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/dice_1" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btJogar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/jogar" />
+
+</RelativeLayout>
